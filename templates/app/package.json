@@ -1,0 +1,24 @@
+{
+  "name": "<%= slugifiedAppName %>",
+  "description": "<%= appDescription %>",
+  "version": "<%= appVersion %>",
+  "main": "index.js",
+  "dependencies": {
+    "gaiajs": "<%= versionsPkg.gaiajs %>"<% if (database) { %>,
+    "gaiajs-driver-mongoose": "<%= versionsPkg.gaiajsDriverMongoose %>"<% } %><% if (templating == "jade") { %>,
+    "coffee-script": "<%= versionsPkg.coffeeScript %>",
+    "jade": "<%= versionsPkg.jade %>"<% } %><% if (templating == "ejs") { %>,
+    "ejs": "<%= versionsPkg.ejs %>"<% } %><% if (templating == "handlebars") { %>,
+    "handlebars": "<%= versionsPkg.handlebars %>",<% } %>
+  },
+  <%  if (github) { %>
+  "author": {
+    "name": "<%= realname %>",
+    "email": "<%= email %>",
+    "url": "<%= githubUrl %>"
+  },
+  <% } else { %>
+  "author": "<%= capitalizedAppAuthor %>",
+  <% } %>
+  "license": "MIT"
+}
