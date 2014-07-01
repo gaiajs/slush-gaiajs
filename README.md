@@ -1,3 +1,5 @@
+[![Dependency Status](https://gemnasium.com/gaiajs/slush-gaiajs.svg)](https://gemnasium.com/gaiajs/slush-gaiajs)
+[![NPM version](https://badge.fury.io/js/slush-gaiajs.svg)](http://badge.fury.io/js/slush-gaiajs)
  > A slush generator to scaffold [GAIAJS](https://github.com/gaiajs/gaiajs) Apps
 
  Inspired by [slush-meanjs](https://github.com/arvindr21/slush-meanjs)
@@ -89,7 +91,7 @@ To find out more about Slush, check out the [documentation](https://github.com/k
 ## Support
 If you have any problem or suggestion please open an issue [here](https://github.com/gaiajs/slush-gaiajs/issues).
 
-## License 
+## License
 
 The MIT License
 

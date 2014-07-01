@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "gaiajs": "<%= versionsPkg.gaiajs %>"<% if (database) { %>,
+    "gaiajs-database": "<%= versionsPkg.gaiajsDatabase %>",
     "gaiajs-driver-mongoose": "<%= versionsPkg.gaiajsDriverMongoose %>"<% } %><% if (templating == "jade") { %>,
     "coffee-script": "<%= versionsPkg.coffeeScript %>",
     "jade": "<%= versionsPkg.jade %>"<% } %><% if (templating == "ejs") { %>,

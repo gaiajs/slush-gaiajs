@@ -45,6 +45,7 @@ function addDatabase(pkg) {
   log.info("add database driver");
   var v = utils.addPkgVersions({});
   pkg.dependencies["gaiajs-driver-mongoose"] = v.versionsPkg.gaiajsDriverMongoose;
+  pkg.dependencies["gaiajs-database"] = v.versionsPkg.gaiajsDatabase;
   return fs.writeFileAsync(process.cwd() + '/package.json', JSON.stringify(pkg, null, '\t'));
 }
 
