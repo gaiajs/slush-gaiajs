@@ -1,6 +1,6 @@
 {
   "name": "slush-gaiajs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "generator for gaiajs",
   "main": "slushfile.js",
   "repository": {
