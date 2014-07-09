@@ -1,6 +1,6 @@
 {
   "name": "slush-gaiajs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "generator for gaiajs",
   "main": "slushfile.js",
   "repository": {
@@ -30,7 +30,7 @@
     "underscore.string": "^2.3.3"
   },
   "versionsPackages": {
-    "gaiajs": "1.0.0-alpha5",
+    "gaiajs": "1.0.0-alpha6",
     "gaiajs-database": "1.0.0",
     "gaiajs-driver-mongoose": "1.0.0-alpha4",
     "coffee-script": "^1.7.1",

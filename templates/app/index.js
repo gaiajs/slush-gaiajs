@@ -10,7 +10,4 @@ hooks.beforeRoute = function *(){};
 hooks.afterRoute = function *(){};
 <% } %>
 
-new gaiajs(__dirname<% if (addHooks) { %>, hooks<% } %>).init().then(function(gaiajs) {
-  var server = require('http').Server(gaiajs.app.callback());
-  server.listen(3000);
-});
+new gaiajs(__dirname<% if (addHooks) { %>, hooks<% } %>).start();
