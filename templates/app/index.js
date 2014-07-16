@@ -10,4 +10,4 @@ hooks.beforeRoute = function *(){};
 hooks.afterRoute = function *(){};
 <% } %>
 
-new gaiajs(__dirname<% if (addHooks) { %>, hooks<% } %>).start();
+new gaiajs(<% if (addHooks) { %>hooks<% } %>).start();
