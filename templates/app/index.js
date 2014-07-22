@@ -1,13 +1,14 @@
 var gaiajs = require('gaiajs');
 
+var options = {};
 <% if (addHooks) { %>
-hooks = {};
-hooks.beforeDatabase = function *(){};
-hooks.afterDatabase = function *(){};
-hooks.beforeMiddlewares = function *(){};
-hooks.afterMiddlewares = function *(){};
-hooks.beforeRoute = function *(){};
-hooks.afterRoute = function *(){};
+options.hooks = {};
+options.hooks.beforeDatabase = function *(){};
+options.hooks.afterDatabase = function *(){};
+options.hooks.beforeMiddlewares = function *(){};
+options.hooks.afterMiddlewares = function *(){};
+options.hooks.beforeRoute = function *(){};
+options.hooks.afterRoute = function *(){};
 <% } %>
 
-new gaiajs(<% if (addHooks) { %>hooks<% } %>).start();
+new gaiajs(options).start();
